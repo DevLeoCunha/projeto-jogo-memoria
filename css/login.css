@@ -1,4 +1,9 @@
 .login-form {
+    align-items: center;
     display: flex; /* Coloca os elementos seguidos um após o outro horizontalmente */
     flex-direction: column; /*Põe os elementos verticalmente*/
+    height: 100vh; /*Os atributos dos elementos ocupam a janela inteira*/
+    background: linear-gradient(to bottom, #5cc1d1, #fff); /* O fundo pega uma tonalidade em gradiente e linear para baixo, escuro para o mais claro*/
+    justify-content: center; /*Coloca os elementos no centro de todas as direções*/
 }
+
