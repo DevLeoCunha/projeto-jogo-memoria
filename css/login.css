@@ -1,0 +1,4 @@
+.login-form {
+    display: flex; /* Coloca os elementos seguidos um após o outro horizontalmente */
+    flex-direction: column; /*Põe os elementos verticalmente*/
+}
