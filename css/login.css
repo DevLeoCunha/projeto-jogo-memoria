@@ -4,7 +4,7 @@
     display: flex; /* Coloca os elementos seguidos um após o outro horizontalmente */
     flex-direction: column; /*Põe os elementos verticalmente após o outro*/
     height: 100vh; /*Os atributos dos elementos ocupam a janela inteira*/
-    background: linear-gradient(to bottom, #5cc1d1, #fff); /* O fundo pega uma tonalidade em gradiente e linear para baixo, escuro para o mais claro*/
+    background: linear-gradient(to bottom,  #587ef2, #fff); /* O fundo pega uma tonalidade em gradiente e linear para baixo, escuro para o mais claro*/
 }
 
 .login__header {
@@ -13,5 +13,31 @@
     display: flex; 
     flex-direction: column;
     margin-bottom: 40px;
-    color: ;
+}
+
+.login__header h1 {
+    color: #363B4A;
+    font-size: 40px;
+}
+
+.login__input {
+    border: 2px solid #363B4A; /*Inseriu uma borda na caixa do input */
+    border-radius: 8px;
+    color: #363B4A;
+    font-size: 20px;
+    margin-bottom: 15px;
+    max-width: 300px; /* coloca um limite de ocupação da tela, para assim ter maior responsividade*/
+    width: 100%; /* o elemento ocupa toda a tela horizontalmente*/
+    background-color: #E9CAAB;
+}
+
+.login__button {
+    border: 2px solid #363B4A; /*Inseriu uma borda na caixa do input */
+    border-radius: 8px;
+    color: #363B4A;
+    font-size: 20px;
+    max-width: 300px; /* coloca um limite de ocupação da tela, para assim ter maior responsividade*/
+    width: 100%; /* o elemento ocupa toda a tela horizontalmente*/
+    background-color: #E9CAAB;
+
 }
