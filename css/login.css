@@ -26,7 +26,7 @@
     color: #363B4A;
     font-size: 18px;
     margin-bottom: 15px;
-    max-width: 300px; /* coloca um limite de ocupação da tela, para assim ter maior responsividade*/
+    max-width: 250px; /* coloca um limite de ocupação da tela, para assim ter maior responsividade*/
     width: 100%; /* o elemento ocupa toda a tela horizontalmente*/
     background-color: #f9f3ed;
     outline: none; /*retira o pequeno destaque quando se clica no input*/
@@ -38,7 +38,7 @@
     border-radius: 50px;
     color: #000d33;
     font-size: 18px;
-    max-width: 150px; 
+    max-width: 120px; 
     width: 100%; 
     background-color: #bfc7df;
     padding: 5px;
