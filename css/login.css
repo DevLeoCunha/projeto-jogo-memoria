@@ -1,9 +1,17 @@
 .login-form {
-    align-items: center;
+    align-items: center; /*Centraliza no eixo X */
+    justify-content: center; /*Centraliza no eixo Y, usar com o align items*/
     display: flex; /* Coloca os elementos seguidos um após o outro horizontalmente */
-    flex-direction: column; /*Põe os elementos verticalmente*/
+    flex-direction: column; /*Põe os elementos verticalmente após o outro*/
     height: 100vh; /*Os atributos dos elementos ocupam a janela inteira*/
     background: linear-gradient(to bottom, #5cc1d1, #fff); /* O fundo pega uma tonalidade em gradiente e linear para baixo, escuro para o mais claro*/
-    justify-content: center; /*Coloca os elementos no centro de todas as direções*/
 }
 
+.login__header {
+    align-items: center; 
+    justify-content: center; 
+    display: flex; 
+    flex-direction: column;
+    margin-bottom: 40px;
+    color: ;
+}
