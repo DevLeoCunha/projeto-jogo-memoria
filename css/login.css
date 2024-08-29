@@ -42,10 +42,11 @@
     background-color: #363B4A;
     padding: 5px;
     cursor: pointer; /* inclui a animação da mão selecionar */
-
 }
 
 .login__button:disabled { /*muda o estilo do botão quando desabilitado*/
-    background-color: #b51616;
-    color: ;
+    background-color:  #a3a2a2;
+    color: white;
+    cursor: auto;
 }
+
