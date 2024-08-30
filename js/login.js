@@ -10,8 +10,8 @@ const validateInput = ({ target }) => { /* Ele acessa o evento do evento, o even
     } 
 }
 
-const handleSubmit = () => {
-    
+const handleSubmit = (event) => {
+    event.preventDefault(); /* Serve pra prevenir o comportamento padrão do formulário, que é enviar e recarregar a página. */
 }
 
 input.addEventListener('input', validateInput); /*Atributo que verifica as mudanças em tempo real do input*/
