@@ -12,6 +12,9 @@ const validateInput = ({ target }) => { /* Ele acessa o evento do evento, o even
 
 const handleSubmit = (event) => {
     event.preventDefault(); /* Serve pra prevenir o comportamento padrão do formulário, que é enviar e recarregar a página. */
+
+    localStorage.setItem('player', input.value); /* Acessa o localstorage da máquina e seleciona o item player e seu valor. Espera por dois parametros para salvar informação, neste caso player e o input.value -> valor que está sendo digitado*/
+    window.location = 'pages/game.html';
 }
 
 input.addEventListener('input', validateInput); /*Atributo que verifica as mudanças em tempo real do input*/
