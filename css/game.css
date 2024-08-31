@@ -10,7 +10,6 @@
 .card {
     aspect-ratio: 2/3; /*proporção do elemento*/
     width: 100%;
-    background-color: blue;
     border-radius: 5px;
     position: relative; /* as faces respeitam as delimitações do card*/
     transition: all 400ms ease;
@@ -23,6 +22,8 @@
     position: absolute;
     background-size: cover;
     background-position: center;
+    border: 2px solid #363B4A;
+    border-radius: 10px;
 }
 
 .front {
