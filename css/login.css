@@ -18,12 +18,13 @@
 .login__header h1 {
     color: #193256;
     font-size: 40px;
+    
 }
 
 .login__input {
-    border: 2px solid #363B4A; /*Inseriu uma borda na caixa do input */
+    border: 2px solid#193256; /*Inseriu uma borda na caixa do input */
     border-radius: 8px;
-    color: #363B4A;
+    color:#193256;
     font-size: 18px;
     margin-bottom: 15px;
     max-width: 250px; /* coloca um limite de ocupação da tela, para assim ter maior responsividade*/
@@ -39,7 +40,7 @@
     font-size: 18px;
     max-width: 250px; 
     width: 100%; 
-    background-color: #363B4A;
+    background-color:#193256;
     padding: 5px;
     cursor: pointer; /* inclui a animação da mão selecionar */
 }
