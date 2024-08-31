@@ -33,7 +33,7 @@
 }
 
 .back {
-    background-image: url('../images-cards/Fundo da Carta.jpg');
+    background-image: url('../images-cards/BackCard.jpg');
     backface-visibility: hidden; /*atenção*/
 }
 
