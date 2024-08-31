@@ -79,6 +79,12 @@ const createElement = (tag, className) => {
     return element;
 }
 
+const revealCard = ({target}) => {
+    
+    
+
+}
+
 
 const createCard = (character) => {
 
@@ -90,6 +96,8 @@ const createCard = (character) => {
 
  card.appendChild(front);
  card.appendChild(back);
+
+ card.addEventListener('click', revealCard);
 
 return card;
 }
@@ -103,10 +111,8 @@ const loadGame = () => {
     Math.random()
 
     shuffledArray.forEach((character) => {
-
         const card = createCard(character);
         grid.appendChild(card);
-
     });
 
 }
