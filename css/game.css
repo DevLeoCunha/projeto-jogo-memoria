@@ -4,7 +4,6 @@
     max-width: 800px;
     grid-template-columns: repeat(5, 1fr); /* o repeat, repete o 5 vezes a medida de 1fr*/
     gap: 10px;
-    margin: 0 auto;
     margin: 100px auto;
 }
 
@@ -13,7 +12,7 @@
     width: 100%;
     background-color: blue;
     border-radius: 5px;
-    position: relative;
+    position: relative; /* as faces respeitam as delimitações do card*/
 }
 
 .face {
@@ -27,5 +26,8 @@
 }
 
 .back {
-    background-color: blue;
+    /* background-color: blue; */
 }
+
+/*contrl + f = aparece o controle de busca no codigo.
+usar o ctrl + ; = transforma em comentário o que for selecionado.*/
