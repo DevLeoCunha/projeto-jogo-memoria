@@ -18,7 +18,11 @@
 .login__header h1 {
     color: #193256;
     font-size: 40px;
-    
+    background-image: linear-gradient(to bottom, #193256, #2f4f7d, rgb(97, 189, 235));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    color: #193256;
 }
 
 .login__input {
