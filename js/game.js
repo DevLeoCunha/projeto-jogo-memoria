@@ -1,4 +1,6 @@
 const grid = document.querySelector('.grid');
+const spanPlayer = document.querySelector('.player');
+const timer = document.querySelector('.timer')
 
 const characters = [
     'Albedo',
@@ -16,60 +18,60 @@ const characters = [
     'Chongyun',
     'Collei',
     'Cyno',
-    'Dehya',
-    'Diluc',
-    'Diona',
-    'Dori',
-    'Eula',
-    'Faruzan',
-    'Fischl',
-    'Furina',
-    'Ganyu',
-    'Gorou',
-    'Hutao',
-    'Itto',
-    'Jean',
-    'Kaeya',
-    'Kaveh',
-    'Kazuha',
-    'Keqing',
-    'Kirara',
-    'Klee',
-    'Kokomi',
-    'Layla',
-    'Lisa',
-    'Lynette',
-    'Lyney',
-    'Mona',
-    'Nahida',
-    'Navia',
-    'Neuvillette',
-    'Nilou',
-    'Ningguang',
-    'Noelle',
-    'Qiqi',
-    'Raiden',
-    'Razor',
-    'Sara',
-    'Sayu',
-    'Shenhe',
-    'Shinobu',
-    'Sucrose',
-    'Tartaglia',
-    'Thoma',
-    'Tighnari',
-    'Venti',
-    'Wanderer',
-    'Wriothesley',
-    'Xiangling',
-    'Xingqiu',
-    'Yae',
-    'Yanfei',
-    'Yaoyao',
-    'Yelan',
-    'Yoimiya',
-    'Yunjin',
-    'Zhongli',
+    // 'Dehya',
+    // 'Diluc',
+    // 'Diona',
+    // 'Dori',
+    // 'Eula',
+    // 'Faruzan',
+    // 'Fischl',
+    // 'Furina',
+    // 'Ganyu',
+    // 'Gorou',
+    // 'Hutao',
+    // 'Itto',
+    // 'Jean',
+    // 'Kaeya',
+    // 'Kaveh',
+    // 'Kazuha',
+    // 'Keqing',
+    // 'Kirara',
+    // 'Klee',
+    // 'Kokomi',
+    // 'Layla',
+    // 'Lisa',
+    // 'Lynette',
+    // 'Lyney',
+    // 'Mona',
+    // 'Nahida',
+    // 'Navia',
+    // 'Neuvillette',
+    // 'Nilou',
+    // 'Ningguang',
+    // 'Noelle',
+    // 'Qiqi',
+    // 'Raiden',
+    // 'Razor',
+    // 'Sara',
+    // 'Sayu',
+    // 'Shenhe',
+    // 'Shinobu',
+    // 'Sucrose',
+    // 'Tartaglia',
+    // 'Thoma',
+    // 'Tighnari',
+    // 'Venti',
+    // 'Wanderer',
+    // 'Wriothesley',
+    // 'Xiangling',
+    // 'Xingqiu',
+    // 'Yae',
+    // 'Yanfei',
+    // 'Yaoyao',
+    // 'Yelan',
+    // 'Yoimiya',
+    // 'Yunjin',
+    // 'Zhongli',
 ];
 
 
@@ -85,8 +87,9 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if (disabledCards.length === 69 ) {
-        alert('Parabéns');
+    if (disabledCards.length === 30 ) {
+        clearInterval(this.loop);
+        alert(`Parabéns, ${spanPlayer.innerHTML}: Seu tempo foi: ${timer.innerHTML}`);
     }
 }
 
@@ -175,4 +178,19 @@ const loadGame = () => {
 
 }
 
-loadGame();
+const startTimer = () => {
+
+   this.loop = setInterval(() => {
+
+        const currentTime = +timer.innerHTML; /*Converte a string em numero o +*/
+        timer.innerHTML = currentTime + 1;
+
+    },1000);
+}
+
+window.onload = () => {
+
+    spanPlayer.innerHTML = localStorage.getItem('player');
+    startTimer()
+    loadGame();
+}

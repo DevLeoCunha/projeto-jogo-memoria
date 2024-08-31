@@ -1,10 +1,36 @@
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 30px;
+    background-image: url(../images-site/genshin-fundo-image.png);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #363b4a85;
+    font-size: 22px;
+    width: 100%;
+    max-width: 1350px;
+    padding: 20px;
+    margin: 0 0 20px;
+    border-radius: 10px;
+}
+
+
 .grid {
     display: grid;
     width: 100%;
-    max-width: 800px;
-    grid-template-columns: repeat(5, 1fr); /* o repeat, repete o 5 vezes a medida de 1fr*/
-    gap: 10px;
-    margin: 100px auto;
+    max-width: 1350px;
+    grid-template-columns: repeat(10, 130px); /* o repeat, repete o 5 vezes a medida de 1fr*/
+    gap: 6px;
+    margin: 0 auto;
 }
 
 .card {
@@ -14,6 +40,7 @@
     position: relative; /* as faces respeitam as delimitações do card*/
     transition: all 400ms ease;  /*atenção*/
     transform-style: preserve-3d; /*atenção*/
+    background-color: rgb(153, 153, 153);
 }
 
 .face {
@@ -45,6 +72,7 @@
     filter: saturate(0);
     opacity: 0.5;
 }
+
 
 /* .card:hover O hover é pra quando o usuário posiciona o mouse por cima do elemento, mesmo que não o interaja com o mesmo */
     
