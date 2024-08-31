@@ -89,7 +89,7 @@ const checkEndGame = () => {
 
     if (disabledCards.length === 30 ) {
         clearInterval(this.loop);
-        alert(`Parabéns, ${spanPlayer.innerHTML}: Seu tempo foi: ${timer.innerHTML}`);
+        alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi: ${timer.innerHTML}`);
     }
 }
 
@@ -117,8 +117,8 @@ const checkCards = () => {
         firstCard = '';
         secondCard = '';
 
-    }, 800);
-}
+    }, 700);
+  }
 
 }
 
@@ -128,7 +128,7 @@ const revealCard = ({target}) => {
         return;
     }
 
-    if(firstCard === '') {
+    if (firstCard === '') {
         target.parentNode.classList.add('reveal-card');
         firstCard = target.parentNode;
 
@@ -140,11 +140,7 @@ const revealCard = ({target}) => {
         checkCards();
 
     }
-    
-
-
 }
-
 
 const createCard = (character) => {
 
@@ -167,15 +163,12 @@ const loadGame = () => {
 
     const duplicateCharacters = [ ...characters, ...characters ];
 
-    const shuffledArray = duplicateCharacters.sort( () => Math.random() - 0.5 );
-
-    Math.random()
+    const shuffledArray = duplicateCharacters.sort(() => Math.random() - 0.5 );
 
     shuffledArray.forEach((character) => {
         const card = createCard(character);
         grid.appendChild(card);
     });
-
 }
 
 const startTimer = () => {
@@ -191,6 +184,6 @@ const startTimer = () => {
 window.onload = () => {
 
     spanPlayer.innerHTML = localStorage.getItem('player');
-    startTimer()
+    startTimer();
     loadGame();
 }
