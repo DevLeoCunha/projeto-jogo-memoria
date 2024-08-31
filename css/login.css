@@ -16,7 +16,7 @@
 }
 
 .login__header h1 {
-    color: #363B4A;
+    color: #193256;
     font-size: 40px;
 }
 
@@ -50,3 +50,8 @@
     cursor: auto;
 }
 
+.imagelogo {
+    width: 100%;
+    max-width: 300px;
+    padding-top: 0px;
+}
