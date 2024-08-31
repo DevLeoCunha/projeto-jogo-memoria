@@ -1,0 +1,31 @@
+.grid {
+    display: grid;
+    width: 100%;
+    max-width: 800px;
+    grid-template-columns: repeat(5, 1fr); /* o repeat, repete o 5 vezes a medida de 1fr*/
+    gap: 10px;
+    margin: 0 auto;
+    margin: 100px auto;
+}
+
+.card {
+    aspect-ratio: 3/4; /*proporção do elemento*/
+    width: 100%;
+    background-color: blue;
+    border-radius: 5px;
+    position: relative;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.front {
+    background-color: red;
+}
+
+.back {
+    background-color: blue;
+}
