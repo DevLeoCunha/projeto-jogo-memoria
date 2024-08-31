@@ -27,20 +27,21 @@
 }
 
 .front {
-    background-image: url('../images-cards/Albedo.png');
     transform: rotateY(180deg); /*atenção*/
 
 }
 
 .back {
-    background-image: url('../images-cards/BackCard.jpg');
+    background-image: url('../images-cards/backcard.jpg');
     backface-visibility: hidden; /*atenção*/
 }
 
-.card:hover { /* O hover é pra quando o usuário posiciona o mouse por cima do elemento, mesmo que não o interaja com o mesmo */
+.reveal-card {
     transform: rotateY(180deg);/* Rotaciona no eixo Y a imagem da carta */
-
 }
+
+/* .card:hover O hover é pra quando o usuário posiciona o mouse por cima do elemento, mesmo que não o interaja com o mesmo */
+    
 
 /*contrl + f = aparece o controle de busca no codigo.
 usar o ctrl + ; = transforma em comentário o que for selecionado.*/
