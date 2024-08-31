@@ -24,6 +24,7 @@
     background-position: center;
     border: 2px solid #363B4A;
     border-radius: 10px;
+    transition: all 800ms ease;
 }
 
 .front {
@@ -38,6 +39,11 @@
 
 .reveal-card {
     transform: rotateY(180deg);/* Rotaciona no eixo Y a imagem da carta */
+}
+
+.disabled-card {
+    filter: saturate(0);
+    opacity: 0.5;
 }
 
 /* .card:hover O hover é pra quando o usuário posiciona o mouse por cima do elemento, mesmo que não o interaja com o mesmo */
