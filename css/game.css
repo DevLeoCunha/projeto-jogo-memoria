@@ -12,8 +12,8 @@
     width: 100%;
     border-radius: 5px;
     position: relative; /* as faces respeitam as delimitações do card*/
-    transition: all 400ms ease;
-    transform-style: preserve-3d;
+    transition: all 400ms ease;  /*atenção*/
+    transform-style: preserve-3d; /*atenção*/
 }
 
 .face {
@@ -28,13 +28,13 @@
 
 .front {
     background-image: url('../images-cards/Albedo.png');
-    transform: rotateY(180deg);
+    transform: rotateY(180deg); /*atenção*/
 
 }
 
 .back {
     background-image: url('../images-cards/Fundo da Carta.jpg');
-    backface-visibility: hidden;
+    backface-visibility: hidden; /*atenção*/
 }
 
 .card:hover { /* O hover é pra quando o usuário posiciona o mouse por cima do elemento, mesmo que não o interaja com o mesmo */
