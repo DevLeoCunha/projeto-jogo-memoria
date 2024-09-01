@@ -73,6 +73,13 @@ header {
     opacity: 0.5;
 }
 
+@media screen and (max-width:920px) {
+    .grid {
+      grid-template-columns: repeat(6, 1fr);
+  
+    }
+}
+
 
 /* .card:hover O hover é pra quando o usuário posiciona o mouse por cima do elemento, mesmo que não o interaja com o mesmo */
     
