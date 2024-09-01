@@ -4,7 +4,7 @@
     display: flex; /* Coloca os elementos seguidos um após o outro horizontalmente */
     flex-direction: column; /*Põe os elementos verticalmente após o outro*/
     height: 100vh; /*Os atributos dos elementos ocupam a janela inteira*/
-    background: linear-gradient(to bottom,  #4492ff, #ffffff); /* O fundo pega uma tonalidade em gradiente e linear para baixo, escuro para o mais claro*/
+    background: linear-gradient(to bottom,  #5878d7, #fff); /* O fundo pega uma tonalidade em gradiente e linear para baixo, escuro para o mais claro*/
 }
 
 .login__header {
