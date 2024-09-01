@@ -54,14 +54,14 @@ header {
     transition: all 800ms ease;
 }
 
-.front {
-    transform: rotateY(180deg); /*atenção*/
-
-}
-
 .back {
     background-image: url('../images-site/backcard.jpg');
     backface-visibility: hidden; /*atenção*/
+}
+
+.front {
+    transform: rotateY(180deg); /*atenção*/
+
 }
 
 .reveal-card {
@@ -80,12 +80,6 @@ header {
     }
 }
 
-@media(max-width: 375px) {
-    header {
-        padding: 7px;
-        font-size: 1em;
-    }
-}
 /* .card:hover O hover é pra quando o usuário posiciona o mouse por cima do elemento, mesmo que não o interaja com o mesmo */
     
 
